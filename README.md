@@ -21,18 +21,23 @@
    - Анализ тональности слов (positive, neutral, negative)  
    - Кластеризация после лемматизации и стемматизации, TF-IDF
 - Преобразовать категориальные и числовые переменные   
-- Создать классы для подготовки датасета к обучению 
+- Создать класс для подготовки датасета к обучению 
 - Сформировать Baseline (наивную базовую модель без ML)
 
 **Экспериментальные модели и финальное решение:**
 - Проанализировать результат работы различных моделей:  
-    - Random Forest, Extra Trees, Decision Tree и др.  
-    - LightGBM, XGBoost, Gradient Boosting  
-    - LightAutoMl, CatBoost, стекинг алгоритмов 
+    - Random Forest, Extra Trees, Decision Tree и др.
+    - CatBoost, LightGBM, XGBoost, Gradient Boosting  
+    - LightAutoMl, H2O, стекинг алгоритмов 
 - Провести оптимизацию моделей по кросс-валидации при помощи Optuna  
-- Обучить финальную модель LightAutoMl 
-- Принять участие в соревновании на kaggle
+- Обучить финальную модель, принять участие в соревновании на kaggle
 - Подвести итоги и проанализирвоать ошибки алгоритмов
 
 <a href="https://www.kaggle.com/angelikasung/competitions">**Страница с моим решением на Kaggle**</a>     
-<a href="https://www.kaggle.com/competitions/sf-dst-car-price-prediction">**Страница соревнования на Kaggle**</a>   
+<a href="https://www.kaggle.com/competitions/sf-dst-car-price-prediction">**Страница соревнования на Kaggle**</a>         
+
+### Структура репозитория:  
+- **Ноутбук с решением. Файл - 6.Project_Automobile_Price.ipynb**   
+- **Датасет с ответами итоговой модели. Файл - submission_automobiles_4.csv**  
+- Ноутбук с решением H2O-automl. Файл - H2O-Aumomobile_price.ipynb
+- Результат анализа данных Pandas Profiling. Файлы: profile_report_test.html,  profile_report_train.html
